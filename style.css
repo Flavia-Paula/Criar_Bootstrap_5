@@ -9,6 +9,39 @@ body {
 header {
   border-bottom: 2px solid #0a2349; /* Linha azul Bootstrap */
 }
+/* Cabeçalho visível */
+header, header h1, header a {
+  color: #000 !important;
+}
+.imagens-laterais {
+  float: right;
+  width: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.imagens-laterais img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Links do menu */
+.nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+/* Efeito ao passar o mouse */
+.nav-link:hover {
+  color: #0d6efd !important; /* Azul Bootstrap */
+  border-bottom: 2px solid #0d6efd;
+  text-decoration: none;
+}
+
 
 header h1 {
   font-weight: 700;
@@ -94,6 +127,19 @@ footer p {
   font-size: 0.9rem;
   color: #6c757d;
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* faz o main ocupar o espaço entre header e footer */
+}
+
 
 /* Responsividade */
 @media (max-width: 767.98px) {
